@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul type=none>
+            <a href="index.html">Inicio</a>
+            <li>Reigstro</li>
+            <li><a href="about.html">Acerca del curso</a></li>
+        </ul>
+    </nav>
+
+    <h1><b>Registro</b></h1>
+    <hr>
+    <form action="mailto:destinatario@example.com?cc=copia@example.com&bcc=oculto@example.com&subject=Registro%20de%20usuario">
+        <table border="1">
+            <caption>Te intera unirte a nuestro curso?</caption>
+            <tr>
+                <td>Nombre:</td>
+                <td><input type="text" name="Nombre" id="name" placeholder="Escribe tu nombre" required></td>
+            </tr>
+
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="Correo" id="mail" placeholder="Escribe tu correo" required></td>
+            </tr>
+
+            <tr>
+                <td>Nivel de estudios:</td>
+                <td><select name="Nivel de estudios" id="Estudios">
+                    <option value="Profesor" selected>Profesor</option>
+                    <option value="Alumno">Alumno</option>
+                    <option value="Director">Director</option>
+                </select></td>
+            </tr>
+
+            <tr>
+                <td>Comentario</td>
+                <td><textarea name="Cometario" id="coment" cols="30" rows="10" placeholder="Escribe aqui tu comentario sin acentos"></textarea></td>
+            </tr>
+
+            <tr>
+                
+                <td colspan="2"><button>Enviar solicitud</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
